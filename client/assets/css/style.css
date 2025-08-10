@@ -2,5 +2,84 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
+:root {
+    --principalColor: #3F7C85;
+    --secondColor: #5C7373; 
+    --clarityColor: #B7BF99;
+    --markColor: #FCB900;
+    --softMarkColor: #FFCB70;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+header .logo-header {
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+header .logo-header h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.6rem;
+}
+
+header .logo-header .icon__logo__header {
+    font-size: 1.3rem;
+    margin-top: 4px;
+    margin-right: 2px;
+    color: var(--principalColor);
+}
+
+header nav a {
+    padding: 5px 10px;
+}
+
+header .main-nav {
+    margin-left: 20px;
+}
+
+header .main-nav a:hover {
+    border-bottom: 1px solid white;
+    transition-duration: 0.1s;
+}
+
+header .main-nav a:hover {
+    border-width: 4px;
+    border-color: var(--principalColor);
+}
+
+header .secondary-nav {
+    font-size: 1.1rem;
+}
+
+.btn__cadastro {
+    background-color: var(--principalColor);
+    color: white;
+    padding: 10px 15px;
+    transition-duration: 0.2s;
+}
+
+.btn__cadastro:hover {
+    background-color: #2e5c63;
+}
+
+.btn__login {
+    transition-duration: 0.2s;
+}
+
+.btn__login:hover {
+    color: black;
+}
