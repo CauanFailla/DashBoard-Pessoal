@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 15px 20px;
 }
 
 header .logo-header {
@@ -33,13 +33,12 @@ header .logo-header {
 
 header .logo-header h1 {
     font-family: "Quicksand", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
-header .logo-header .icon__logo__header {
-    font-size: 1.3rem;
-    margin-top: 4px;
-    margin-right: 2px;
+header  .mark-title-header {
+    font-weight: normal;
     color: var(--principalColor);
 }
 
@@ -47,29 +46,29 @@ header nav a {
     padding: 5px 10px;
 }
 
-header .main-nav {
-    margin-left: 20px;
-}
-
-header .main-nav a:hover {
+header .main-nav a {
+    display: inline-block;
+    padding: 0rem 1.5rem;
     border-bottom: 1px solid white;
     transition-duration: 0.1s;
 }
 
 header .main-nav a:hover {
-    border-width: 4px;
+    border-width: 2px;
     border-color: var(--principalColor);
 }
 
 header .secondary-nav {
-    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .btn__cadastro {
     background-color: var(--principalColor);
     color: white;
-    padding: 10px 15px;
+    padding: 5px 10px;
     transition-duration: 0.2s;
+    border-radius: 5px;
 }
 
 .btn__cadastro:hover {
@@ -82,4 +81,132 @@ header .secondary-nav {
 
 .btn__login:hover {
     color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-hero {
+    background-image: url("../img/pexels-vojtech-okenka-127162-392018.jpg");
+    background-size: cover;
+    background-position: 0px -70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95vw;
+    height: 570px;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.sec-hero h1 {
+    font-size: 3.4rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 0px 2px rgb(0, 0, 0);
+}
+
+.sec-hero .btn__container__hero {
+    margin-top: 20px;
+}
+
+.sec-hero .btn__cadastro {
+    padding: 11px 27px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin-left: 5px;
+}
+
+.sec-about {
+    margin-top: 120px;
+}
+
+.sec-about h1 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.text__container__about {
+    width: 70vw;
+    margin: 30px auto;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+ul li i {
+    color: var(--principalColor); 
+    margin-right: 23px;
+}
+
+.sec-features {
+    display: flex;
+    flex-direction: column;
+    margin: 120px 0px;
+    width: 70vw;
+}
+
+.sec-features h1 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.container-features {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    font-size: 17px;
+    gap: clamp(0.5rem, 1vw, 1.5rem);
+
+}
+
+.titulo-features {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+.container-features > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondColor);
+    color: white;
+    min-width: 0; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.icon-features {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: white;
+}
+
+footer {
+    background-color: var(--principalColor);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    cursor: default;
 }
