@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -10,5 +9,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express-session": "^1.18.2"
+  }
 }
