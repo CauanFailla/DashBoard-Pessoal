@@ -1,0 +1,10 @@
+header {
+    justify-content: center;   
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
