@@ -1,0 +1,39 @@
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+}
+
+.icon__bell {
+    margin-right: 14px;
+    font-size: 1.2rem;
+}
+
+.user-header .icon__user {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: rgb(53, 53, 53);
+    padding: 4px 7px;
+    border-radius: 20px;
+    border: 2px solid rgb(41, 41, 41);
+}
+
+.user__name__info {
+    font-size: 0.9rem;
+}
+
+.user__account__info {
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+.btn__more__user {
+    margin-left: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
