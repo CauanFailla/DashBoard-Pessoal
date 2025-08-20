@@ -6,11 +6,13 @@ header {
 .user-header {
     display: flex;
     align-items: center;
+    cursor: default;
 }
 
-.icon__bell {
+.user-header .icon__bell {
     margin-right: 14px;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .user-header .icon__user {
@@ -22,18 +24,121 @@ header {
     border: 2px solid rgb(41, 41, 41);
 }
 
-.user__name__info {
+.user-header .user__name__info {
     font-size: 0.9rem;
 }
 
-.user__account__info {
+.user-header .user__account__info {
     font-size: 0.8rem;
     color: rgb(0, 0, 0);
     font-weight: 300;
 }
 
-.btn__more__user {
+.user-header .btn__more__user {
     margin-left: 8px;
     font-size: 0.9rem;
     cursor: pointer;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+.sec-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--principalColor);
+    width: 60px;
+    height: 90.5vh;
+}
+
+.sec-sidebar .icon__sidebar {
+    font-size: 1.1rem;
+    margin-top: 25px;
+    padding: 7px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.sec-sidebar .icon__home {
+    margin-top: 30px;
+    background-color: white;
+    color: var(--secondColor);
+}
+
+.sec-main {
+    width: 100%;
+    padding: 0px 30px;
+}
+
+.container__datas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(0.5rem, 1vw, 1.5rem);
+    border-radius: 0px 0px 15px 15px;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+}
+
+.container__datas .data {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 45px;
+    padding: 20px 30px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
+}
+
+.data p {
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+.data h1 {
+    margin-top: 20px;
+}
+
+.data div {
+    align-self: center;
+}
+
+.icon__data {
+    align-self: center;
+    margin: 10px;
+    font-size: 1.8rem;
+    color: var(--secondColor);
+}
+
+
+.container__management {
+    margin-top: 55px;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    padding: 0px 30px;
+}
+
+.header__management {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.header__management p {
+    width: 100%;
+    font-weight: 300;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(199, 199, 199);
+    padding-bottom: 15px;
+    text-align: center;
+    transition-duration: 0.1s;
+}
+
+.header__management p:hover {
+    border-bottom: 2px solid var(--principalColor);
 }
